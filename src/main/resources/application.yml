@@ -13,7 +13,7 @@ spring:
       routes:
         # Ruta para el servicio de miembros
         - id: miembros-service
-          uri: lb://miembros-service
+          uri: lb://MIEMBROS-SERVICE
           predicates:
             - Path=/api/miembros/**
           filters:
@@ -21,7 +21,7 @@ spring:
 
         # Ruta para el servicio de clases
         - id: clases-service
-          uri: lb://clases-service
+          uri: lb://CLASES-SERVICE
           predicates:
             - Path=/api/clases/**
           filters:
@@ -29,7 +29,7 @@ spring:
 
         # Ruta para el servicio de entrenadores
         - id: entrenadores-service
-          uri: lb://entrenadores-service
+          uri: lb://ENTRENADORES-SERVICE
           predicates:
             - Path=/api/entrenadores/**
           filters:
@@ -37,7 +37,7 @@ spring:
 
         # Ruta para el servicio de equipos
         - id: equipos-service
-          uri: lb://equipos-service
+          uri: lb://EQUIPOS-SERVICE
           predicates:
             - Path=/api/equipos/**
           filters:
